@@ -1,0 +1,13 @@
+      while(Serial1.available()) {
+        while('@' != Serial1.read()) { 
+        }
+
+        for(int i=1; i<=4; i++) {
+          n = Serial1.parseInt();
+          A [i]=n;
+          Serial.print("A[");  
+          Serial.print(i);
+          Serial.print("]=");
+          Serial.println(A[i]);
+        }
+      }
