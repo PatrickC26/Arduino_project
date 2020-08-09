@@ -1,7 +1,14 @@
 #include <SoftwareSerial.h>
+
 const int rxpin = 2; // 接收 pin
 const int txpin = 3; // 發送 pin
+<<<<<<< HEAD
 SoftwareSerial Serial2(rxpin, txpin); // 建立虛擬序列埠
+=======
+
+SoftwareSerial Serial2(rxpin, txpin); // 建立虛擬序列埠
+
+>>>>>>> f7ad32efd050a94771eabaaec7236192cd4bb2c9
 void setup() {
   Serial.begin(9600);
   Serial2.begin(9600); // 初始化藍芽序列埠
