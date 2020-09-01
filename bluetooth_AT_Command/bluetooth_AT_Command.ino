@@ -3,7 +3,7 @@
 const int rxpin = 2; // 接收 pin
 const int txpin = 3; // 發送 pin
 
-//SoftwareSerial Serial2(rxpin, txpin); // 建立虛擬序列埠
+SoftwareSerial Serial2(rxpin, txpin); // 建立虛擬序列埠
 
 void setup() {
   Serial.begin(9600);
