@@ -50,9 +50,12 @@ void loop(){
   y = y+fixY;
   z = z+fixZ;
   
-  if (x<0) x+=360;
-  if (y<0) y+=360;
-  if (z<0) z+=360;
+  if (x<-180) x+=360;
+  if (y<-180) y+=360;
+  if (z<-180) z+=360;
+  if (x>180) x-=360;
+  if (y>180) y-=360;
+  if (z>180) z-=360;
 
   Serial.print("AngleX= ");
   Serial.print(x);
