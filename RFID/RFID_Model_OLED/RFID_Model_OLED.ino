@@ -7,7 +7,7 @@
 Adafruit_SSD1306 screen(128, 64); 
 
 #define RST_PIN   10        // 讀卡機的重置腳位
-#define SS_PIN    A0        // 晶片選擇腳位
+#define SS_PIN    A0         // 晶片選擇腳位
 
 byte UID[4];
 bool state = false; //false -> read  true -> write

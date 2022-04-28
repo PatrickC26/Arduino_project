@@ -1,6 +1,6 @@
 //FirebaseESP8266.h must be included before ESP8266WiFi.h
 #include "FirebaseESP8266.h"
-#include <LineNotifyESP8266.h>
+//#include <LineNotifyESP8266.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 
@@ -13,15 +13,15 @@
 #define LINE_TOKEN "dQTTxukM2YZej9SttKNZrffr2XJYcnhpkOjopF3p4Dd"
 
 void setup() {
-//  Serial.begin(9600);
-//
-//  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-//  Serial.print("Connecting to Wi-Fi");
-//  while (WiFi.status() != WL_CONNECTED)
-//  {
-//    Serial.print(".");
-//    delay(300);
-//  }
+  Serial.begin(9600);
+
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  Serial.print("Connecting to Wi-Fi");
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(300);
+  }
 
 }
 
